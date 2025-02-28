@@ -284,7 +284,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.2
+          image: dasmartineztri/online-boutique-frontend:v2
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -326,8 +326,6 @@ spec:
           # # When not set, defaults to "local" unless running in GKE, otherwies auto-sets to gcp
           # - name: ENV_PLATFORM
           #   value: "aws"
-          - name: ENABLE_PROFILER
-            value: "0"
           # - name: CYMBAL_BRANDING
           #   value: "true"
           # - name: ENABLE_ASSISTANT
